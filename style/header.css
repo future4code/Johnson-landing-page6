@@ -84,6 +84,10 @@ body {
         text-align: center;
     }
 
+    .navbar-links li:hover {
+        background-color: #627386;
+    }
+
     .navbar-links li a {
         padding: .5rem 1rem;
     }
