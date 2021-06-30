@@ -2,11 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -88,13 +83,11 @@ body {
         background-color: #627386;
     }
 
-
     .navbar-links li a {
         padding: .5rem 1rem;
     }
 
     .navbar-links.active {
         display: flex;
-
     }
 }
