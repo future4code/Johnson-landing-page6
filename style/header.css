@@ -60,8 +60,8 @@ body {
     border-radius: 10px;
 }
 
-@media (max-width: 600px){
-    .menu-responsive{
+@media (max-width: 760px) {
+    .menu-responsive {
         display: flex;
     }
 
@@ -88,13 +88,13 @@ body {
         background-color: #627386;
     }
 
+
     .navbar-links li a {
         padding: .5rem 1rem;
     }
 
     .navbar-links.active {
         display: flex;
-        
+
     }
 }
-
