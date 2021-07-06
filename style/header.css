@@ -12,8 +12,14 @@
 }
 
 .title {
+    display: flex;
+    align-items: center;
     font-size: 2rem;
     margin: .5rem;
+}
+
+.title img {
+    height: 150px;
 }
 
 .navbar-links ul {
@@ -27,6 +33,7 @@
 }
 
 .navbar-links li a {
+    font-size: 18px;
     text-decoration: none;
     color: white;
     padding: 1rem;
@@ -34,6 +41,10 @@
 }
 
 .navbar-links li:hover {
+    padding: 54px 54px;
+    transition: 1s;
+    text-transform: capitalize;
+    border-radius: 24px;
     background-color: #627386;
 }
 
