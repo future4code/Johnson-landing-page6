@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .navbar {
@@ -12,12 +13,11 @@
     position: fixed;
 }
 
-.title {
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-    margin: .5rem;
+.navbar h1 {
+    font-size: 32px;
+    margin-left: 15px;
 }
+
 
 .title img {
     height: 150px;
@@ -32,6 +32,7 @@
 
 .navbar-links li {
     list-style: none;
+    height: 100%;
 }
 
 .navbar-links li a {
@@ -43,9 +44,9 @@
 }
 
 .navbar-links li:hover {
-    padding: 48px 0 48px 0;
+    padding: 18px 0 18px 0;
     transition: 0.7s;
-    border-radius: 24px;
+    border-radius: 16px;
     background-color: #627386;
 }
 
