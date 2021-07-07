@@ -169,13 +169,35 @@ body {
     height: 700px;
 }
 
-.foot{
-    height: 170px;
+/* Estilização do Rodapé */
+
+footer {
     background: #3b4f66;
 }
 
-.foot img {
+.footer-final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-final small {
+    color: white;
+    margin: 0 100px 0 100px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #6d95a1;
+}
+
+
+footer img {
     margin-left: 10px;
     height: 150px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
 }
 
