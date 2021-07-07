@@ -3,20 +3,28 @@
 }
 
 .navbar {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #3b4f66;
     color: white;
-    position: top;
+    position: fixed;
 }
 
 .title {
+    display: flex;
+    align-items: center;
     font-size: 2rem;
     margin: .5rem;
 }
 
+.title img {
+    height: 150px;
+}
+
 .navbar-links ul {
+    height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -27,6 +35,7 @@
 }
 
 .navbar-links li a {
+    font-size: 18px;
     text-decoration: none;
     color: white;
     padding: 1rem;
@@ -34,6 +43,9 @@
 }
 
 .navbar-links li:hover {
+    padding: 48px 0 48px 0;
+    transition: 0.7s;
+    border-radius: 24px;
     background-color: #627386;
 }
 
@@ -80,6 +92,7 @@
     }
 
     .navbar-links li:hover {
+        padding: 14px 0 14px 0;
         background-color: #627386;
     }
 
