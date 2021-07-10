@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/body.css">
+    <link rel="stylesheet" href="style/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital@0;1&family=Indie+Flower&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital@0;1&family=Indie+Flower&display=swap" rel="stylesheet">
     <title>4Safe Seguros</title>
 </head>
 
@@ -39,10 +37,9 @@
 <body>
 
     <main class="gradiente">
-
         <h1 class="shown">4Safe Seguros</h1>
-
     </main>
+
     <div class="segundaTela">
         <a href="#carroPaisagem">
             <div>
@@ -86,18 +83,62 @@
 
             </div>
         </div>
-        <div id="telaCasa">
+        <div class="telaCasa">
             <img src="./img/casa2.jpg" alt="Casa exemplo">
         </div>
     </div>
+
     <div class="quintaTela">
-        <div>
+        <div class="logo">
             <img src="./img/logo.png" alt="Logo da empresa">
         </div>
-        <div>
-            <p>Teste</p>
+        
+        <div class="infos">
+            <div class="socialMedias">
+                
+                <p>Siga-nos nas nossas redes sociais:</p>
+                
+                <ul style="list-style-type: none;">
+                    <li><a target="_blank" href="http://www.facebook.com"><img src="./img/facebook.png" alt="facebook"></a></li>
+                    <li><a target="_blank" href="http://www.instagram.com"><img src="./img/instagram.png" alt="instagram"></a></li>
+                    <li><a target="_blank" href="http://www.twitter.com"><img src="./img/twitter.png" alt="twitter"></a></li>
+                </ul>
+                
+            </div>
+
+            <div class="contatos">
+
+                <p>Contate-nos:</p>
+
+                <ul style="list-style-type: none;">
+                    <li><img src="./img/telefone.png" alt="telefone"><a href="tel:001515151515">+00 1515151515</a></li>
+                    <li><img src="./img/email.png" alt="email"><a href="malito:contato@4safe.com">contato@4safe.com</a></li>
+                </ul>
+            </div>
+
+            <form action="">
+
+                <p>Fale conosco:</p>
+
+                <div class="formulario">
+                    <label for="nome"></label>
+                    <input type="text" placeholder="Nome" id="nome" name="nome">
+                </div>
+
+                <div class="formulario">
+                    <label for="email"></label>
+                    <input type="text" placeholder="E-mail" id="email" name="email">
+                </div>
+
+                <div class="formulario">
+                    <label for="mensagem"></label>
+                    <textarea placeholder="Sua mensagem aqui..." name="mensagem" id="mensagem"></textarea>
+                </div>
+
+                <button class="enviar">Enviar</button>
+
+            </form>
         </div>
-    </div>
 
     <footer>
         <div id="footer" class="footer-final">
