@@ -9,5 +9,6 @@ function toggleMenu(event){
     nav.classList.toggle('active')
 }
 
+
 menuResponsive.addEventListener('click', toggleMenu)
 menuResponsive.addEventListener('touchstart', toggleMenu)
