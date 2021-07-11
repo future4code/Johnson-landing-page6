@@ -134,7 +134,6 @@ body, header{
     box-shadow: 10px 5px 5px slategrey;
 }
 
-
 .segundaTela > a > div:hover {
 
     -webkit-transform:scale(1.0);
@@ -181,7 +180,6 @@ body, header{
     align-items: center;
     color: white;
 }
-
 
 .planosCarro > #seguro24h{
         padding-bottom: 10%;
@@ -375,7 +373,6 @@ footer p {
     font-size: 16px;
 }
 
-
 @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .menu-responsive {
         display: flex;
@@ -500,10 +497,8 @@ footer p {
         text-align: center;
     }
 
-
-.segundaTela > a > div > h1{
-    font-size: 200%;
-}
-
+    .segundaTela > a > div > h1{
+        font-size: 170%;
+    }
 
 }
