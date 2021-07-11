@@ -1,8 +1,10 @@
-Projeto landing page 4Safe Seguros feito por: Anderson Heidrich Leite, André Luiz Gomes Pereira e Gabriela Fogaça Cunha
+###Projeto landing page 4Safe Seguros feito por: 
+*Anderson Heidrich Leite 
+*André Luiz Gomes Pereira 
+*Gabriela Fogaça Cunha
 
-# 4safe Seguros
 
-*LINK: http://4safe.surge.sh/
+#LINK: http://4safe.surge.sh/
 
 
 ![image](https://user-images.githubusercontent.com/61711374/125206089-b0244380-e25b-11eb-804a-e9fcfb13780d.png)
