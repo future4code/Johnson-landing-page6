@@ -25,9 +25,9 @@ body, header{
     margin-left: 15px;
 }
 
-.title img {
+/* .title img {
     height: 150px;
-}
+} */
 
 .navbar-links ul {
     height: 100%;
@@ -191,6 +191,11 @@ body, header{
     height: 100%;
 }
 
+.quartaTela > div > img{
+    width: 50vw;
+    height: 100vh; 
+}
+
 .planosCasa{
     height: 100%;
     display: flex;
@@ -211,10 +216,6 @@ body, header{
     height: 100%;
 }
 
-.quartaTela > div > img{
-    width: 50vw;
-    height: 100vh; 
-}
 
 .quintaTela{
     height: 100%;
@@ -228,22 +229,21 @@ body, header{
 .quintaTela > div.logo {
     margin-top: 2vh;
     width: 50%;
-    height: 55vh;
+    height: 62vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .quintaTela > div.infos {
-    width: 50%;
-    height: 15vh;
+    width: 80vw;
+    height: 20vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .quintaTela > div > img {
-    margin: 10%;
     border-radius: 100%;
 }
 
@@ -252,54 +252,59 @@ body, header{
     flex-direction: column;
 }
 
+.socialMedias > p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
 .socialMedias > ul {
     display: flex;
-    width: 25%;
+    justify-content: space-evenly;
 }
 
 .socialMedias > ul > li > a > img {
-    width: 100%;
+    width: 25px;
 }
 
-.contatos > ul {
-    width: 7%;
+.formulario {
+    display: flex;
+    flex-direction: column;
 }
 
-.contatos > ul > li > img {
-    width: 100%;
+.form > p {
+    font-size: 16px;
+    margin-bottom: 8px;
 }
 
 /* Estilização do Rodapé */
 
 footer {
     background: #3b4f66;
-    height: 8vh;
+    height: 12vh;
     width: 100%;
 }
 
 .footer-final {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin: 10px 50px 0 50px;
+    border-bottom: 1px solid #6d95a1;
 }
 
 .footer-final small {
     color: #f2f2f2;
-    margin: 0 100px 0 100px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #6d95a1;
+    font-size: 12px;
+    padding-bottom: 3px;
 }
 
-/* footer img {
-    margin-left: 10px;
-    height: 150px;
-} */
-
 footer p {
-    color: #f2f2f2;
-    text-align: center;
-    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+    color: #f2f2f2;    
+    font-size: 16px;
 }
 
 @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -381,43 +386,4 @@ footer p {
     .quintaTela > div > img{
         width: 140%;
     }
-
-  
-
-
 }
-    /* .menu-responsive {
-        display: flex;
-    }
-
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar {
-        flex-direction: column;
-    }
-
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-        display: block;
-    }
-
-    .navbar-links li {
-        text-align: center;
-    }
-
-    .navbar-links li:hover {
-        padding: 14px 0 14px 0;
-        background-color: #627386;
-    }
-
-    .navbar-links li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    } */
