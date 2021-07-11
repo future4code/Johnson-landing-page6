@@ -1,7 +1,4 @@
-Projeto landing page 4Safe Seguros feito por:
-Anderson Heidrich Leite,
-André Luiz Gomes Pereira,
-Gabriela Fogaça Cunha
+Projeto landing page 4Safe Seguros feito por: Anderson Heidrich Leite, André Luiz Gomes Pereira e Gabriela Fogaça Cunha
 
 # 4safe Seguros
 
