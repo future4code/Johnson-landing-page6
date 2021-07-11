@@ -5,10 +5,13 @@
     font-family: 'Fira Sans Condensed', sans-serif;
 }
 
+/* Estilizações de layout padrão para body e header */
+
 body, header{
     max-width: 100%;
 }
 
+/* Estilização do menu */
 .navbar {
     width: 100%;
     display: flex;
@@ -67,6 +70,8 @@ body, header{
     border-radius: 10px;
 }
 
+/* Animações da tela inicial - gradiente e animação de texto */
+
 .gradiente {
     animation: gradient 10s ease infinite;
     background: linear-gradient(180deg, #3B4F66, #688C6A, #80A665, #A6D973) no-repeat;
@@ -108,6 +113,8 @@ body, header{
 .shown {
     animation: shown 3s forwards;
 }
+
+/* Estilização da segunda tela */
 
 .segundaTela {
     display: flex;
@@ -154,6 +161,8 @@ body, header{
     margin-top: 10%;
     font-size: 250%;
 }
+
+/* Estilização terceira tela - tela do plano de seguro veicular */
 
 .terceiraTela {
     display: flex;
@@ -209,6 +218,8 @@ body, header{
 .planosCarro button:hover{
     background: grey;
 }
+
+/* Estilização da quarta tela - tela com as informações do seguro de vida */
 .quartaTela{
     display: flex;
     height: 890px;
@@ -281,6 +292,8 @@ body, header{
 .planosCasa button:hover{
     background: grey;
 }
+
+/* Estilização da quinta tela - informações sobre a 4Safe */
 
 .quintaTela{
     height: 100%;
@@ -373,7 +386,10 @@ footer p {
     font-size: 16px;
 }
 
+/* Estilização para Iphone 6/7/8 utilizando media query */
+
 @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Estilização responsiva do menu */
     .menu-responsive {
         display: flex;
     }
@@ -409,14 +425,23 @@ footer p {
         display: flex;
     }
 
+    /* Estilização responsiva da tela inicial com animações */
+
     .gradiente > h1 {
         font-size: 60px;
     }
 
+    /* Estilização responsiva da segunda tela */
     .segundaTela {
         display: grid;
         grid-template-columns: 1fr
     }
+
+    .segundaTela > a > div > h1{
+        font-size: 170%;
+    }
+
+    /* Estilização responsiva da terceira tela */
 
     .terceiraTela{
         display: grid;
@@ -432,6 +457,13 @@ footer p {
         margin-bottom: 70px;
     }
 
+    #seguro24h{
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+    /* Estilização responsiva quarta tela */
     .quartaTela {
         display: flex;
         flex-direction: column-reverse;
@@ -445,6 +477,8 @@ footer p {
         margin-top: 70px;
         margin-bottom: 70px;
     }
+
+    /* Estilização responsiva quinta tela */
 
     .quintaTela {
         height: 85vh;
@@ -465,6 +499,8 @@ footer p {
         height: 26vh;
     }
 
+    /* Estilização responsiva tela de informações da 4Safe */
+
     .socialMedias {
         padding-bottom: 12px;
     }
@@ -476,6 +512,8 @@ footer p {
     .formulario {
         padding-bottom: 1px;
     }
+
+    /* estilização responsiva do footer */
 
     .footer-final {
         margin: 4px 20px 0 20px;
@@ -490,15 +528,6 @@ footer p {
     footer p {
         font-size: 12px;
         margin: 0;
-    }
-    #seguro24h{
-        padding-left: 5%;
-        padding-right: 5%;
-        text-align: center;
-    }
-
-    .segundaTela > a > div > h1{
-        font-size: 170%;
     }
 
 }
