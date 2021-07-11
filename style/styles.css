@@ -212,7 +212,6 @@ body, header{
     height: 100%;
 }
 
-
 .quintaTela{
     height: 100%;
     background: #f2f2f2;
@@ -250,7 +249,7 @@ body, header{
 
 .socialMedias > p {
     font-size: 16px;
-    margin-bottom: 8px;
+    padding-bottom: 8px;
 }
 
 .socialMedias > ul {
@@ -269,14 +268,16 @@ body, header{
 
 .form > p {
     font-size: 16px;
-    margin-bottom: 8px;
+    padding-bottom: 8px;
 }
 
 /* Estilização do Rodapé */
 
 footer {
-    background: #3b4f66;
-    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #3b4f66;
+    height: 10vh;
     width: 100%;
 }
 
@@ -284,7 +285,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 10px 50px 0 50px;
+    margin: 4px 50px 0 50px;
     border-bottom: 1px solid #6d95a1;
 }
 
@@ -296,19 +297,13 @@ footer {
 
 footer p {
     display: flex;
-    flex-direction: column;
-    margin: 10px;
-    align-items: center;
+    justify-content: center;
+    margin: 4px;
     color: #f2f2f2;    
     font-size: 16px;
 }
 
 @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .responsive {
-        display: flex;
-        flex-direction: column;
-    }
-
     .menu-responsive {
         display: flex;
     }
@@ -333,7 +328,6 @@ footer p {
     }
 
     .navbar-links li:hover {
-        padding: 14px 0 14px 0;
         background-color: #627386;
     }
 
@@ -344,7 +338,11 @@ footer p {
     .navbar-links.active {
         display: flex;
     }
-    
+
+    .gradiente > h1 {
+        font-size: 60px;
+    }
+
     .segundaTela {
         display: grid;
         grid-template-columns: 1fr
@@ -367,7 +365,6 @@ footer p {
     .quartaTela {
         display: flex;
         flex-direction: column-reverse;
-    
     }
 
     .quartaTela > div{
@@ -379,7 +376,50 @@ footer p {
         margin-bottom: 70px;
     }
 
+    .quintaTela {
+        height: 85vh;
+    }
+
     .quintaTela > div > img{
         width: 140%;
     }
+
+    .quintaTela > div.logo {
+        height: 54vh;
+        align-items: flex-start;
+    }
+
+    .quintaTela > div.infos {
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 26vh;
+    }
+
+    .socialMedias {
+        padding-bottom: 12px;
+    }
+
+    .form {
+        padding-bottom: 10px;
+    }
+
+    .formulario {
+        padding-bottom: 1px;
+    }
+
+    .footer-final {
+        margin: 4px 20px 0 20px;
+    }
+    
+    .footer-final small {
+        color: #f2f2f2;
+        font-size: 8px;
+        padding-bottom: 3px;
+    }
+    
+    footer p {
+        font-size: 12px;
+        margin: 0;
+    }
+
 }
