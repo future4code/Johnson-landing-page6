@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+/* Estilizações de layout padrão para body e header */
+
+body, header{
+    max-width: 100%;
+}
+
+/* Estilização do menu */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b4f66;
+    color: #f2f2f2;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar h1 {
+    font-size: 32px;
+    margin-left: 15px;
+}
+
+.navbar-links ul {
+    height: 100%;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+    height: 100%;
+}
+
+.navbar-links li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #f2f2f2;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    transition: 0.8s;
+    border-radius: 16px;
+    background-color: #627386;
+}
+
+.menu-responsive {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.menu-responsive .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+/* Animações da tela inicial - gradiente e animação de texto */
+
+.gradiente {
+    animation: gradient 10s ease infinite;
+    background: linear-gradient(180deg, #3B4F66, #688C6A, #80A665, #A6D973) no-repeat;
+    background-size: 400% 400%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f2f2f2;
+    height: 100vh;
+    font-size: 300%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 50% 0%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 50% 0;
+    }
+}
+
+@keyframes shown {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.shown {
+    animation: shown 3s forwards;
+}
+
+/* Estilização da segunda tela */
+
+.segundaTela {
+    display: flex;
+    height: 100vh;
+    background: #3b4f66;
+}
+
+.segundaTela > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.segundaTela > a > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f2f2f2;
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px slategrey;
+}
+
+.segundaTela > a > div:hover {
+
+    -webkit-transform:scale(1.0);
+    transform:scale(1.1);
+
+}
+
+.segundaTela > a > div> img {
+    height: 65%;
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.segundaTela > a > div > h1{
+    text-decoration: none;
+    color:black;
+    margin-top: 10%;
+    font-size: 250%;
+}
+
+/* Estilização terceira tela - tela do plano de seguro veicular */
+
+.terceiraTela {
+    display: flex;
+    height: 890px;
+    background: linear-gradient(steelblue, #80A665);
+    max-width: 100%;
+}
+
+.terceiraTela > div{
+    display: flex;
+    width: 50%;
+}
+
+.terceiraTela > div > img {
+    width: 100%;
+    height: 100%;
+}
+
+.planosCarro {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.planosCarro > #seguro24h{
+        padding-bottom: 10%;
+}
+
+.planosCarro > #seguroCarro{
+    text-align: center;
+}
+
+.planosCarro #protecao{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.planosCarro #conhecerPlanoCarro{
+    padding-bottom: 5%;
+}
+
+.planosCarro button{
+    padding: 3%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.planosCarro button:hover{
+    background: grey;
+}
+
+/* Estilização da quarta tela - tela com as informações do seguro de vida */
+.quartaTela{
+    display: flex;
+    height: 890px;
+    background: linear-gradient(steelblue, #80A665);
+    max-width: 100%;
+}
+
+.quartaTela > div {
+    display: flex;
+    width: 50%;
+}
+
+.quartaTela > div.telaCasa > img {
+    width: 100%;
+    height: 100%;
+}
+
+.quartaTela > div > img{
+    width: 50vw;
+    height: 100vh; 
+}
+
+.planosCasa{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.planosCasa > div{
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    background-color: #f2f2f2;
+    margin-left: 5px;
+}
+
+.telaCasa {
+    width: 100%;
+    height: 100%;
+}
+
+#planejamentoFinanceiro{
+    padding-bottom: 5%;
+    text-align: center;
+    padding-left: 2%;
+
+}
+
+#conhecerPlanoVida{
+    padding-bottom: 5%;
+    text-align: center;
+    padding-left: 2%;
+
+}
+
+#seguroFamilia{
+    text-align: center;
+}
+
+.planosCasa > button{
+    margin-bottom: 5%;
+    padding: 3%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.planosCasa button:hover{
+    background: grey;
+}
+
+/* Estilização da quinta tela - informações sobre a 4Safe */
+
+.quintaTela{
+    height: 100%;
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quintaTela > div.logo {
+    margin-top: 2vh;
+    width: 50%;
+    height: 62vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quintaTela > div.infos {
+    width: 80vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quintaTela > div > img {
+    border-radius: 100%;
+}
+
+.socialMedias {
+    display: flex;
+    flex-direction: column;
+}
+
+.socialMedias > p {
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+.socialMedias > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socialMedias > ul > li > a > img {
+    width: 25px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.form > p {
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+/* Estilização do Rodapé */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #3b4f66;
+    height: 10vh;
+    width: 100%;
+}
+
+.footer-final {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 4px 50px 0 50px;
+    border-bottom: 1px solid #6d95a1;
+}
+
+.footer-final small {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    margin: 4px;
+    color: #f2f2f2;    
+    font-size: 16px;
+}
+
+/* Estilização para Iphone 6/7/8 utilizando media query */
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Estilização responsiva do menu */
+    .menu-responsive {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        display: block;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li:hover {
+        background-color: #627386;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    /* Estilização responsiva da tela inicial com animações */
+
+    .gradiente > h1 {
+        font-size: 60px;
+    }
+
+    /* Estilização responsiva da segunda tela */
+    .segundaTela {
+        display: grid;
+        grid-template-columns: 1fr
+    }
+
+    .segundaTela > a > div > h1{
+        font-size: 170%;
+    }
+
+    /* Estilização responsiva da terceira tela */
+
+    .terceiraTela{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .terceiraTela > div{
+        width: 100%;
+    }
+
+    .terceiraTela > div > h1{
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    #seguro24h{
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+    /* Estilização responsiva quarta tela */
+    .quartaTela {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .quartaTela > div{
+        width: 100%;
+    }
+
+    .quartaTela > div > h1{
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    /* Estilização responsiva quinta tela */
+
+    .quintaTela {
+        height: 85vh;
+    }
+
+    .quintaTela > div > img{
+        width: 140%;
+    }
+
+    .quintaTela > div.logo {
+        height: 54vh;
+        align-items: flex-start;
+    }
+
+    .quintaTela > div.infos {
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 26vh;
+    }
+
+    /* Estilização responsiva tela de informações da 4Safe */
+
+    .socialMedias {
+        padding-bottom: 12px;
+    }
+
+    .form {
+        padding-bottom: 10px;
+    }
+
+    .formulario {
+        padding-bottom: 1px;
+    }
+
+    /* estilização responsiva do footer */
+
+    .footer-final {
+        margin: 4px 20px 0 20px;
+    }
+    
+    .footer-final small {
+        color: #f2f2f2;
+        font-size: 8px;
+        padding-bottom: 3px;
+    }
+    
+    footer p {
+        font-size: 12px;
+        margin: 0;
+    }
+
+}
